@@ -29,7 +29,7 @@ const Service = () => {
             <div className={`p-4 ${service.bg} rounded-b-lg text-center transition-all duration-300 group-hover:bg-opacity-80`}>
               <h1 className="text-2xl font-bold">{service.title}</h1>
             </div>
-            <div className={`absolute inset-0 flex flex-col items-center justify-center p-5 bg-white bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+            <div className={`absolute inset-0 flex flex-col items-center justify-center p-5 ${service.bg} bg-opacity-90 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
               <h1 className="text-2xl font-bold mb-2">{service.title}</h1>
               <p className="text-center">{service.description}</p>
             </div>
