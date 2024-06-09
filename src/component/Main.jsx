@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Page from "./Page"
-import Admin from "./Admin"
+import Admin from "./Admin/Admin"
 
 
 const Main = () => {
