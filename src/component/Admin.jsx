@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Admin/Sidebar";
 import Main from "./Main";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import BlogPost from "./BlogPost";
-import PropertyListing from "./PropertyListing";
+import BlogPost from "./Admin/BlogPost";
+import PropertyListing from "./Admin/PropertyListing";
 
 const Admin = () => {
   const [activeLink, setActiveLink] = useState("admin");
