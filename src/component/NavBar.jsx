@@ -107,9 +107,9 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                to="/about"
+                to="/aboutus"
                 className={`block px-5 lg:inline-block mt-4 lg:mt-0 mx-2 ${
-                  activeLink === "about"
+                  activeLink === "aboutus"
                     ? "text-white bg-teal-500 rounded-xl"
                     : ""
                 } hover:bg-orange-500 hover:rounded-xl`}

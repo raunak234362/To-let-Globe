@@ -1,0 +1,161 @@
+
+/* ---------------General Styling------------- */
+
+h1{
+    color: white  !important ;
+    font-family: Poppins-regular !important ;
+    font-weight: 200  !important ;
+    /* letter-spacing: 5px !important ; */
+}
+h6{
+    color: rgb(2, 151, 146)  !important ;
+    text-transform: capitalize  !important ;
+    font-family: Poppins-regular !important ;
+    font-weight: 200  !important ;
+}
+#home{
+  /* display: flex !important ; */
+  margin-top: 5%  !important ;
+  justify-content: center  !important ; /* Center horizontally */
+  align-items: center  !important ; /* Center vertically */
+  height: 85vh  !important ;
+  width: 100%  !important ;
+}
+
+
+
+/* ----------------Top Home----------------- */
+.top-home{
+  width: 100%  !important ;
+  height: 100vh  !important ;
+  position: absolute  !important ;
+  overflow-y: hidden  !important ;
+  overflow-x: hidden  !important ;
+  /* background-color: rgb(118, 112, 112) !important ; */
+
+}
+
+.tagline{
+  position: absolute  !important ;
+  letter-spacing: 5px !important ;
+  top: 30% !important ;
+  left: 0 !important ;
+  right: 0 !important ;
+  text-align: center !important ;
+  transition: all 1.5s ease-in-out  !important ;
+}
+
+.scrolled .tagline{
+  font-size: 2rem !important ;
+  transform: translate(0,220px) !important ;
+  letter-spacing: 0 !important ;
+  opacity: 0 !important ;
+  transform: translateX(-20%)  !important ;
+}
+
+.headline{
+  position: absolute !important ;
+  top: 40% !important ;
+  left: 0 !important ;
+  right: 0 !important ;
+  text-align: center !important ;
+  color: #C8A21C  !important ;
+  transition: all 1.5s ease-in-out  !important ;
+}
+
+.scrolled .headline{
+  opacity: 0 !important ;
+  right: 60% !important ;
+}
+
+
+/* -----------------Bottom-Home------------------ */
+.bottom-home{
+  width: 100% !important ;
+  height: 100vh !important ;
+  position: relative !important ;
+  overflow-y: hidden !important ;
+  overflow-x: hidden !important ;
+  /* background-color: rgb(63, 63, 63) !important ; */
+}
+
+
+.tagline2{
+  opacity: 0 !important ;
+  position: absolute !important ;
+  letter-spacing: 5px !important ;
+  top: 30% !important ;
+  left: auto !important ;
+  right: auto !important ;
+  font-size: 2rem !important ;
+  transition: all 1.5s ease-in-out !important ;
+}
+
+.scrolled .tagline2{
+  opacity: 1 !important ;
+  transform: translateX(-51%) !important ;
+  top: 30% !important ;
+}
+
+.headline2{
+  position: absolute !important ;
+  font-size: 1rem !important ;
+  opacity: 1 !important ;
+  top: 40% !important ;
+  left: 0 !important ;
+  right: 0 !important ;
+  color: #C8A21C  !important ;
+  transition: all 1.5s ease-in-out !important ;
+}
+
+.scrolled .headline2{
+  /* padding-left: 10% !important ; */
+  opacity: 1 !important ;
+  padding: 0 !important ;
+  margin: 0 !important ;
+  position: absolute !important ;
+  color: white !important ;
+  top: 40% !important ;
+  transform: translateX(-29.5%) !important ;
+}
+
+.input-bar {
+  opacity:  0 !important ;
+  top:45% !important ;
+  width: 35% !important ;
+  left: 30% !important ;
+  position: absolute !important ;
+  transition: all 1.2s ease-in-out  !important ;
+  width: 400px !important ;
+}
+
+.scrolled .input-bar{
+  opacity: 1 !important ;
+  width: 35% !important ;
+  left: 5% !important ;
+}
+
+.scrolled .wrap2 {
+    overflow: hidden !important ;
+    border-right: .15em solid #C8A21C  !important ; /* Adjust color and size as needed */
+    white-space: nowrap !important ;
+    margin: 0 auto !important ;
+    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite !important ;
+  }
+  
+.btn{
+  border-radius: 0 5px 5px 0  !important ;
+  background-color: #039b73  !important ;
+}
+
+  /* --------------Animation---------------- */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 255, 238) !important ; }
+  }
+  

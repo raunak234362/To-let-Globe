@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router-dom"
-import Homepage from "./landingpage/Homepage"
+import {Homepage} from "./landingpage/Homepage"
 import NavBar from "./NavBar"
 import Contact from "./contact/Contact"
 import Service from "./service/Service"
 import Blog from "./blog/Blog"
-import AboutUs from "./About/AboutUs"
 import PropertyListing from "./property/PropertyListing"
-
+import {AboutUs} from "./About/AboutUs"
 
 const Page = () => {
   return (
