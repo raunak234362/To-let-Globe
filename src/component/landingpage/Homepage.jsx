@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { HomeUp } from './home/HomeUp';
 import { HomeDown } from './home/HomeDown';
+import Service from '../service/Service';
 
 
 // import {Testimonial} from './testimonial';
@@ -26,6 +27,7 @@ export const Homepage = () => {
     <section className={isScrolled ? "home scrolled" : "home"} id="home">
             <HomeUp/>
             <HomeDown/>
+            <Service />
           
             
     </section>
