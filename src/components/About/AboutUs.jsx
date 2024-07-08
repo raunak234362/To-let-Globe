@@ -1,83 +1,83 @@
 /* eslint-disable no-irregular-whitespace */
 // import { Container } from 'react-bootstrap'
-import { useEffect } from 'react'
-import $ from 'jquery'
-import './about.css'
-import './about2.css'
-import ceo1 from '../../assets/about/CEO1.png'
-import ceo2 from '../../assets/about/CEO2.jpg'
-import ceo3 from '../../assets/about/CEO3.jpeg'
-import divi from '../../assets/about/division.png';
+import { useEffect } from "react";
+import $ from "jquery";
+import "./about.css";
+import "./about2.css";
+import ceo1 from "../../assets/about/CEO1.png";
+import ceo2 from "../../assets/about/CEO2.jpg";
+import ceo3 from "../../assets/about/CEO3.jpeg";
+import divi from "../../assets/about/division.png";
 // import { Fplus } from '../components/faq'
 
- const AboutUs = () => {
+const AboutUs = () => {
   useEffect(() => {
-    const topoffset = document.getElementById('team-head')
-    var agPosY // Define agPosY variable
+    const topoffset = document.getElementById("team-head");
+    var agPosY; // Define agPosY variable
 
-    var agTimelineLineProgress = $('.js-timeline_line-progress')
-    var agTimelinePoint = $('.js-timeline-card_point-box')
-    var agTimelineItem = $('.js-timeline_item')
-    var agOuterHeight = $(window).outerHeight()
+    var agTimelineLineProgress = $(".js-timeline_line-progress");
+    var agTimelinePoint = $(".js-timeline-card_point-box");
+    var agTimelineItem = $(".js-timeline_item");
+    var agOuterHeight = $(window).outerHeight();
     // eslint-disable-next-line no-unused-vars
-    var agHeight = $(window).height()
-    var agFlag = false
+    var agHeight = $(window).height();
+    var agFlag = false;
 
     function fnOnScroll() {
-      agPosY = $(window).scrollTop() // Assign value to agPosY
-      fnUpdateFrame()
+      agPosY = $(window).scrollTop(); // Assign value to agPosY
+      fnUpdateFrame();
     }
 
     function fnOnResize() {
-      agPosY = $(window).scrollTop() // Assign value to agPosY
-      agHeight = $(window).height()
-      fnUpdateFrame()
+      agPosY = $(window).scrollTop(); // Assign value to agPosY
+      agHeight = $(window).height();
+      fnUpdateFrame();
     }
 
     function fnUpdateWindow() {
-      agFlag = false
-      fnUpdateProgress()
+      agFlag = false;
+      fnUpdateProgress();
     }
 
     function fnUpdateProgress() {
-      var agTop = topoffset.offsetTop + 0
+      var agTop = topoffset.offsetTop + 0;
 
-      var i = agTop + agPosY - $(window).scrollTop()
+      var i = agTop + agPosY - $(window).scrollTop();
       var a =
-        agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop()
-      var n = agPosY - a + agOuterHeight / 2
+        agTimelineLineProgress.offset().top + agPosY - $(window).scrollTop();
+      var n = agPosY - a + agOuterHeight / 2;
       if (i <= agPosY + agOuterHeight / 2) {
-        n = i - a
+        n = i - a;
       }
-      agTimelineLineProgress.css({ height: n + 'px' })
+      agTimelineLineProgress.css({ height: n + "px" });
 
       agTimelineItem.each(function () {
-        var agTop = $(this).find(agTimelinePoint).offset().top
+        var agTop = $(this).find(agTimelinePoint).offset().top;
 
         if (
           agTop + agPosY - $(window).scrollTop() <
           agPosY + 0.5 * agOuterHeight
         ) {
-          $(this).addclassName('js-ag-active')
+          $(this).addclassName("js-ag-active");
         } else {
-          $(this).removeclassName('js-ag-active')
+          $(this).removeclassName("js-ag-active");
         }
-      })
+      });
     }
 
     function fnUpdateFrame() {
-      agFlag || requestAnimationFrame(fnUpdateWindow)
-      agFlag = true
+      agFlag || requestAnimationFrame(fnUpdateWindow);
+      agFlag = true;
     }
 
-    $(window).on('scroll', fnOnScroll)
-    $(window).on('resize', fnOnResize)
+    $(window).on("scroll", fnOnScroll);
+    $(window).on("resize", fnOnResize);
 
     return () => {
-      $(window).off('scroll', fnOnScroll)
-      $(window).off('resize', fnOnResize)
-    }
-  }, [])
+      $(window).off("scroll", fnOnScroll);
+      $(window).off("resize", fnOnResize);
+    };
+  }, []);
   // const [isOpen1, setIsOpen1] = useState(false);
   // const [isOpen2, setIsOpen2] = useState(false);
   // const [isOpen3, setIsOpen3] = useState(false);
@@ -102,7 +102,6 @@ import divi from '../../assets/about/division.png';
   // const toggleFAQ5 = () => {
   //   setIsOpen5(!isOpen5);
   // };
-  
 
   return (
     <section className="about">
@@ -191,10 +190,13 @@ import divi from '../../assets/about/division.png';
       </div>
 
       <div className="team-container">
-        <div id="team-head" className='mb-2'>Our team</div>
+        <div id="team-head" className="mb-2">
+          Our team
+        </div>
 
-        <div><img className='imagd' src={divi} alt='division'/></div>
-        
+        <div>
+          <img className="imagd" src={divi} alt="division" />
+        </div>
 
         <div className="team-images">
           <div className="flip-box">
@@ -204,7 +206,7 @@ import divi from '../../assets/about/division.png';
                   className="imagew"
                   src={ceo1}
                   alt="Founder"
-                  style={{ width: '250px', height: '250px' }}
+                  style={{ width: "250px", height: "250px" }}
                 />
               </div>
               <div className="flip-box-back">
@@ -223,7 +225,7 @@ import divi from '../../assets/about/division.png';
                   className="imagew"
                   src={ceo3}
                   alt="Co founder"
-                  style={{ width: '250px', height: '250px' }}
+                  style={{ width: "250px", height: "250px" }}
                 />
               </div>
               <div className="flip-box-back">
@@ -241,7 +243,7 @@ import divi from '../../assets/about/division.png';
                 <img
                   src={ceo2}
                   alt="Developer"
-                  style={{ width: '250px', height: '250px' }}
+                  style={{ width: "250px", height: "250px" }}
                 />
               </div>
               <div className="flip-box-back">
@@ -255,9 +257,8 @@ import divi from '../../assets/about/division.png';
         </div>
       </div>
       {/* <Fplus /> */}
-      
     </section>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;
