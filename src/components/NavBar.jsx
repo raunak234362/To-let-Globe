@@ -10,8 +10,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-black p-4">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-black top-0">
+      <div className="container flex justify-between fixed items-center px-5">
         <div className="flex flex-row">
           <div>
             <Link to="/" className="flex items-center">

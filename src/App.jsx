@@ -1,10 +1,10 @@
 import { BrowserRouter } from 'react-router-dom'
-import Main from './component/Main'
+import Main from './components/Main'
 
 
 function App() {
   return (
-    <div className="bg-black text-white h-screen">
+    <div className="bg-black h-full w-full overflow-x-hidden">
       <BrowserRouter>
       <Main/>    
       </BrowserRouter>

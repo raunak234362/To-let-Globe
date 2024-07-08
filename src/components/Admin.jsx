@@ -18,7 +18,7 @@ const Admin = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row gap-5 min-h-screen relative">
+    <div className="flex flex-col md:flex-row gap-5 min-h-screen">
       <div
         className={`fixed inset-0 z-0 bg-black bg-opacity-50 transition-opacity duration-300 md:hidden ${
           showSidebar ? "opacity-100" : "opacity-0 pointer-events-none"
