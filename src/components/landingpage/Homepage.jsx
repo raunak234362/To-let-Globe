@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
 import { HomeUp } from "./home/HomeUp";
-// import { HomeDown } from "./home/HomeDown";
 
-// import {Testimonial} from './testimonial';
-// import { Blog } from './blog/blog'
-// import Service from './service'
 
-export const Homepage = () => {
+const Homepage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -30,3 +26,5 @@ export const Homepage = () => {
     </section>
   );
 };
+
+export default Homepage;

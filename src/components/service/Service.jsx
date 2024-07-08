@@ -7,7 +7,7 @@ import office from "../../assets/service/image27.png";
 
 const Service = () => {
   return (
-    <div className="px-7 py-5 mt-5 bg-black">
+    <div className="px-7 mt-5 bg-black h-screen">
       <h1 className="text-6xl font-bold text-white">Services</h1>
       <p className="text-xs text-[#CCB454]">
         SKIP THE MIDDLEMAN : RENT OR LEASE DIRECTLY ON TO-LET GLOBE

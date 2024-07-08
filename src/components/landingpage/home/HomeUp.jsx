@@ -15,7 +15,7 @@ export const HomeUp = () => {
   }, []);
 
   return (
-    <div>
+    <div className="h-full">
       <div className="flex w-screen h-screen justify-center items-center">
         <div
           className={`mx-8 w-full md:w-2/3 lg:w-full transition-all duration-1000 ease-in-out ${

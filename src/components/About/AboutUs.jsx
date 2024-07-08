@@ -10,7 +10,7 @@ import ceo3 from '../../assets/about/CEO3.jpeg'
 import divi from '../../assets/about/division.png';
 // import { Fplus } from '../components/faq'
 
-export const AboutUs = () => {
+ const AboutUs = () => {
   useEffect(() => {
     const topoffset = document.getElementById('team-head')
     var agPosY // Define agPosY variable
@@ -259,3 +259,5 @@ export const AboutUs = () => {
     </section>
   )
 }
+
+export default AboutUs

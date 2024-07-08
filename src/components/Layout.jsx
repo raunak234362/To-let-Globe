@@ -1,14 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-
-import NavBar from "./NavBar";
-import Contact from "./contact/Contact";
+import {NavBar, Contact, AboutUs} from "./index"
 import Service from "./service/Service";
 import Blog from "./blog/Blog";
 import PropertyListing from "./property/PropertyListing";
-import { AboutUs } from "./About/AboutUs";
+
 import Landing from "./Landing";
 
-const Page = () => {
+const Layout = () => {
   return (
     <div className="">
       <div>
@@ -28,4 +26,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Layout;

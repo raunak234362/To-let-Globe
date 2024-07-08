@@ -1,4 +1,4 @@
-import { Homepage } from "./landingpage/Homepage"
+import {Homepage} from "./index"
 import Service from "./service/Service"
 
 
