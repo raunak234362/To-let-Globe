@@ -1,5 +1,5 @@
 
-const PropertyListing = () => {
+const Property = () => {
   return (
     <div>
       Property Listing
@@ -7,4 +7,4 @@ const PropertyListing = () => {
   )
 }
 
-export default PropertyListing
+export default Property

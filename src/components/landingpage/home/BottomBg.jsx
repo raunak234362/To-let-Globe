@@ -44,7 +44,7 @@ import sun from "../../../assets/sun/sun.svg";
 import bg1 from "../../../assets/background/grey.svg";
 import bg2 from "../../../assets/background/black.svg";
 
-export const BottomBg =() =>{
+ const BottomBg =() =>{
     return(
         <Container className="b-background">
 
@@ -105,3 +105,5 @@ export const BottomBg =() =>{
         </Container>
     )
 }
+
+export default BottomBg

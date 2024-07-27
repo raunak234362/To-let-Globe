@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const HomeUp = () => {
+ const HomeUp = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -56,3 +56,4 @@ export const HomeUp = () => {
     </div>
   );
 };
+export default HomeUp

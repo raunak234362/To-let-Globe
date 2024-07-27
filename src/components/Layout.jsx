@@ -1,8 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import {NavBar, Contact, AboutUs} from "./index"
-import Service from "./service/Service";
-import Blog from "./blog/Blog";
-import PropertyListing from "./property/PropertyListing";
+import {NavBar, Contact, AboutUs, Service, Blog, Property} from "./index"
 
 import Landing from "./Landing";
 
@@ -19,7 +16,7 @@ const Layout = () => {
           <Route path="/service" element={<Service />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/property" element={<PropertyListing />} />
+          <Route path="/property" element={<Property />} />
         </Routes>
       </div>
     </div>

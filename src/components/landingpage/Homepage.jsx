@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HomeUp } from "./home/HomeUp";
+import { HomeUp } from "../index";
 
 
 const Homepage = () => {

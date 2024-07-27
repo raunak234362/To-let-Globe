@@ -1,10 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import Sidebar from "./Admin/Sidebar";
-import Main from "./Main";
+
+import { Sidebar, Main, BlogPost, PropertyListing } from "./index";
+
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import BlogPost from "./Admin/BlogPost";
-import PropertyListing from "./Admin/PropertyListing";
 
 const Admin = () => {
   const [activeLink, setActiveLink] = useState("admin");
@@ -52,7 +51,7 @@ const Admin = () => {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/blogpost" element={<BlogPost />} />
-            <Route path="/propertlisting" element={<PropertyListing />} />
+            <Route path="/propertylisting" element={<PropertyListing />} />
           </Routes>
         </div>
       </div>

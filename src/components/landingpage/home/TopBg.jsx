@@ -46,7 +46,7 @@ import sun from "../../../assets/sun/sun.svg";
 // import bg1 from "../../../assets/background/grey.svg";
 // import bg2 from "../assets/image/background/bg2.svg";
 
-export const TopBg =() =>{
+ const TopBg =() =>{
     return(
         <Container>
 
@@ -112,3 +112,4 @@ export const TopBg =() =>{
        </Container>
     )
 }
+export default TopBg
