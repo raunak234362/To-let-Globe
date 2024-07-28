@@ -7,13 +7,13 @@ import office from "../../assets/service/image27.png";
 
 const Service = () => {
   return (
-    <div className="px-7 mt-5 bg-black h-screen">
-      <h1 className="text-6xl font-bold text-white">Services</h1>
+    <div className="px-7 mt-10 bg-black h-screen">
+      <h1 className="text-6xl font-bold text-white mb-3">Services</h1>
       <p className="text-xs text-[#CCB454]">
         SKIP THE MIDDLEMAN : RENT OR LEASE DIRECTLY ON TO-LET GLOBE
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5 text-black">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16 text-black">
         {[
           { img: pg, title: "Paying Guest", bg: "bg-[#6CC1B6]", description: "Find budget-friendly and convenient paying guest accommodations for a comfortable stay away from home" },
           { img: flat, title: "Flat", bg: "bg-[#CCB454]", description: "Discover a diverse range of apartments for rent, customize to suit your lifestyle and budget" },

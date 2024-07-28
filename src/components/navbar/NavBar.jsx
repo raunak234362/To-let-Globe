@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="z-50">
+    <nav className="z-0">
       <div className="container bg-black top-0 flex justify-between fixed items-center px-3 py-1 rounded-xl">
         <div>
           <Link to="/" className="flex items-center">

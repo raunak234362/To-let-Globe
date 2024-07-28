@@ -5,7 +5,7 @@ import Landing from "./Landing";
 const Layout = () => {
   return (
     <div className="flex flex-col min-h-screen w-full">
-      <div className="nav fixed top-0">
+      <div className="nav fixed top-0 z-50">
         <NavBar />
       </div>
       <div className="main flex-1 pt-16 px-4">
@@ -18,7 +18,7 @@ const Layout = () => {
           <Route path="/property" element={<Property />} />
         </Routes>
       </div>
-      <div className="footer bottom-0">
+      <div className="footer bottom-0 mt-5">
         <Footer />
       </div>
     </div>
