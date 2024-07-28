@@ -7,6 +7,11 @@ import Select from './fields/Select'
 import Footer from './footer/Footer'
 import NavBar from './navbar/NavBar'
 
+//Main Component Layout
+import Layout from './Layout'
+import Admin from './Admin.jsx'
+import LoginLayout from './LoginLayout.jsx'
+
 //Login Component
 import Login from './Login/Login'
 
@@ -44,6 +49,9 @@ export {
   Input,
   Select,
   Login,
+  Layout,
+  LoginLayout,
+  Admin,
   NavBar,
   Footer,
   Homepage,

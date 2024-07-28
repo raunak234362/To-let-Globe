@@ -4,7 +4,7 @@ import { LuMessagesSquare } from "react-icons/lu";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row md:gap-9 p-5 mx-6 justify-between">
+    <div className="flex flex-col md:flex-row md:gap-9 p-5 mx-6 my-10 justify-between">
       <div className="w-full md:w-1/2 px-5">
         <div>
           <h1 className="text-white text-4xl font-semibold">

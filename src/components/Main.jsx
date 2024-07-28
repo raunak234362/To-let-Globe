@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import Layout from "./Layout"
-import Admin from "./Admin"
-import LoginLayout from "./LoginLayout"
+import {Layout,Admin, LoginLayout} from "./index"
 
 
 const Main = () => {
