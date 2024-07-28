@@ -1,15 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import {NavBar, Contact, AboutUs, Service, Blog, Property} from "./index"
-
+import { NavBar, Contact, AboutUs, Service, Blog, Property, Footer } from "./index";
 import Landing from "./Landing";
 
 const Layout = () => {
   return (
-    <div className="">
-      <div>
+    <div className="flex flex-col min-h-screen w-full">
+      <div className="nav fixed top-0">
         <NavBar />
       </div>
-      <div>
+      <div className="main flex-1 pt-16 px-4">
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/contact" element={<Contact />} />
@@ -18,6 +17,9 @@ const Layout = () => {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/property" element={<Property />} />
         </Routes>
+      </div>
+      <div className="footer bottom-0">
+        <Footer />
       </div>
     </div>
   );

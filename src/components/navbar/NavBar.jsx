@@ -10,18 +10,18 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-black top-0">
-      <div className="container flex justify-between fixed items-center px-5">
+    <nav className="z-50">
+      <div className="container bg-black top-0 flex justify-between fixed items-center px-3 py-1 rounded-xl">
+        <div>
+          <Link to="/" className="flex items-center">
+            <img
+              src={logo}
+              alt="Logo"
+              className=" h-16 lg:h-12 ml-10 lg:ml-0"
+            />
+          </Link>
+        </div>
         <div className="flex flex-row">
-          <div>
-            <Link to="/" className="flex items-center">
-              <img
-                src={logo}
-                alt="Logo"
-                className=" h-16 lg:h-12 ml-10 lg:ml-0"
-              />
-            </Link>
-          </div>
           <div className=" flex justify-end">
             <button
               className="text-white block lg:hidden"

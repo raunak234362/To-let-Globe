@@ -2,8 +2,10 @@
 
 const Footer = () => {
   return (
-    <div>
-      
+    <div className="text-white">
+      <div className="grid grid-cols-4 md:grid-cols-2">
+
+      </div>
     </div>
   )
 }

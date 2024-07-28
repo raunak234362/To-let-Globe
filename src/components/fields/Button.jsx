@@ -1,19 +1,17 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+import React from "react";
 
-
-function Button({
-    children,
-    type="button",
-    bgColor="bg-gray-600",
-    textColor="text-white",
-    className='',
-    ...props
-
-}) {
+const Button = ({ children, type = "button", className = "", ...props }) => {
   return (
-    <button className={`px-4 py-2 rounded-lg ${bgColor} ${textColor}`} {...props}>{children}</button>
-  )
-}
+    <button
+      type={type}
+      className={`${className} flex flex-row justify-start items-center rounded-xl mt-3 `}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

@@ -1,6 +1,6 @@
 /* eslint-disable no-unreachable */
 /* eslint-disable no-useless-catch */
-import config from '../config/config'
+import config from '../constant/config'
 import { Client, Account, ID } from 'appwrite'
 
 export class AuthService {

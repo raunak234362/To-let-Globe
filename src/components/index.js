@@ -25,6 +25,7 @@ import TopBg from './landingpage/home/TopBg'
 
 //Blog Components
 import Blog from './blog/Blog'
+import BlogView from './blog/BlogView.jsx'
 
 //Property Component
 import Property from './property/Property'
@@ -50,6 +51,7 @@ export {
   AboutUs,
   BlogPost,
   Blog,
+  BlogView,
   Main,
   PropertyListing,
   Sidebar,
